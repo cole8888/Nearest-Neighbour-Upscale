@@ -9,7 +9,13 @@ To use the example driver code:
 - `./NearestNeighbourUpscale <INPUT_IMAGE.PNG> <SCALE>`
   - Where `<INPUT_IMAGE.PNG>` is the image you want to upscale and `<SCALE>` the the scale you want to upscale it by.
 
-How it works:
+# How it works:
+For this example we will take this 25x25px image and upscale it to 50x50px.
+
+(Please note I've upscaled the images in this demo by 10x so that they can easily be viewed without zooming in.)
+
+![upscaled_img79](https://user-images.githubusercontent.com/32819560/148020448-0e3c5614-9ea5-4781-9513-26995b7e70e5.png)
+
 - Step 1: Copy the pixels from the original image into the topleft corner of each expanded pixel
 ![0624](https://user-images.githubusercontent.com/32819560/148003124-f89114e3-4e99-43fb-ac90-34a429cb4c4d.png)
 
