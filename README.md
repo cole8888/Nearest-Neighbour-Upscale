@@ -6,7 +6,7 @@ To use the example driver code:
 - `git clone https://github.com/cole8888/Nearest-Neighbour-Upscale`
 - `make`
 - `./NearestNeighbourUpscale <INPUT_IMAGE.PNG> <SCALE>`
-- - Where `<INPUT_IMAGE.PNG>` is the image you want to upscale and `<SCALE>` the the scale you want to upscale it by.
+  - Where `<INPUT_IMAGE.PNG>` is the image you want to upscale and `<SCALE>` the the scale you want to upscale it by.
 
 How it works:
 - Step 1: Copy the pixels from the original image into the topleft corner of each expanded pixel
