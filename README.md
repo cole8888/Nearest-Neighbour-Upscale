@@ -1,6 +1,6 @@
 # Nearest-Neighbor-Upscale
 C program to quickly perform nearest neighbour upscaling of an image.
-Example driver code works on 24bit or 32bit PNG images, but the upscaler functions should work with any image format if you can extract the values of each pixel in the image into a u_char array.
+Example driver code works on 24bit or 32bit PNG images. Upscaler functions should work with any image format if you can extract the values of each pixel in the image into a u_char array.
 
 To use the example driver code:
 - `git clone https://github.com/cole8888/Nearest-Neighbour-Upscale`
