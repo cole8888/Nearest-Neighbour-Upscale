@@ -8,7 +8,7 @@ LDLIBS = -lm
 
 OBJS = NearestNeighbourUpscale.o lodepng.o NearestNeighbourUpscaleDriver.o
 
-EXE = NearestNeighborUpscale
+EXE = NearestNeighbourUpscale
 
 debug: CFLAGS = $(BASEFLAGS) $(DEBUG_FLAGS)
 debug: $(EXE)
