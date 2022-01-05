@@ -1,5 +1,5 @@
 /*
-	Cole L - 4th December 2021 - https://github.com/cole8888/Nearest-Neighbour-Upscale
+	Cole L - 5th January 2022 - https://github.com/cole8888/Nearest-Neighbour-Upscale
 
 	Driver program to use the NearestNeighbourUpscale code from a commandline program.
 	Parses the command line arguments, reads in the image from disk, passes it to the appropriate upscaler function and saves the upscaled image to disk.
