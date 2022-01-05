@@ -1,5 +1,5 @@
 /*
-	Cole L - 4th December 2021 - https://github.com/cole8888/Nearest-Neighbour-Upscale
+	Cole L - 5th January 2022 - https://github.com/cole8888/Nearest-Neighbour-Upscale
 */
 
 #ifndef NEARESTNEIGHBOURUPSCALEDRIVER_H
