@@ -16,7 +16,7 @@ For this example we will take this 25x25px image and upscale it to 50x50px.
 
 ![upscaled_img79](https://user-images.githubusercontent.com/32819560/148020448-0e3c5614-9ea5-4781-9513-26995b7e70e5.png)
 
-- Step 1: Copy the pixels from the original image into the topleft corner of each expanded pixel
+- Step 1: Copy the pixels from the original image into the top left corner of each expanded pixel
 ![0624](https://user-images.githubusercontent.com/32819560/148003124-f89114e3-4e99-43fb-ac90-34a429cb4c4d.png)
 
 - Step 2: Fill in the top row of each expanded pixel with the data from the topleft-most pixel in that expanded pixel.
