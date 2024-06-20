@@ -8,6 +8,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#ifdef _WIN32
+typedef unsigned char u_char;
+typedef unsigned int u_int;
+#endif
+
 // Don't change these, lets the program know how many colour channels there are for RGB and RGBA.
 #define CHANNELS_PER_PIXEL_RGB 3
 #define CHANNELS_PER_PIXEL_RGBA 4
