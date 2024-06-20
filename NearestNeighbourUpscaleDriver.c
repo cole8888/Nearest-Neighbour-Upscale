@@ -4,7 +4,9 @@
 	Driver program to use the NearestNeighbourUpscale code from a commandline program.
 	Parses the command line arguments, reads in the image from disk, passes it to the appropriate upscaler function and saves the upscaled image to disk.
 */
-
+#ifdef _WIN32
+#include <windows.h>
+#endif
 #include "NearestNeighbourUpscaleDriver.h"
 
 // Calculate the amount of time in seconds between the provided start and finish timespec structs.
@@ -73,6 +75,30 @@ int getIntDigits(int num){
 	}
 	return digits;
 }
+
+#ifdef _WIN32
+char* get_current_dir_name() {
+    DWORD length = GetCurrentDirectory(0, NULL);
+    if (length == 0) {
+        fprintf(stderr, "Error getting current directory length: %lu\n", GetLastError());
+        return NULL;
+    }
+
+    char* buffer = (char*)malloc(length);
+    if (buffer == NULL) {
+        fprintf(stderr, "Memory allocation error\n");
+        return NULL;
+    }
+
+    if (GetCurrentDirectory(length, buffer) == 0) {
+        fprintf(stderr, "Error getting current directory: %lu\n", GetLastError());
+        free(buffer);
+        return NULL;
+    }
+
+    return buffer;
+}
+#endif
 
 // Save the image, do not overwrite any previous images.
 void saveImg(u_char *img, int dimX, int dimY){
